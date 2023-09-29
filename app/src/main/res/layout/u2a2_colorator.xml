@@ -11,9 +11,11 @@
         android:layout_width="136dp"
         android:layout_height="71dp"
         android:text="Mostrar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="230dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
         android:id="@+id/u2a2sbColorR"
@@ -22,17 +24,19 @@
         android:max="255"
         android:progress="0"
         app:layout_constraintBottom_toTopOf="@+id/u2a2btMostrar"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="125dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/u2a2txBarra"
         android:layout_width="135dp"
         android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/u2a2btMostrar"
-        app:layout_constraintVertical_bias="0.357"
-        tools:layout_editor_absoluteX="136dp" />
+        app:layout_constraintVertical_bias="0.357" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -40,6 +44,7 @@
         android:layout_height="wrap_content"
         android:text="CheckBox"
         app:layout_constraintBottom_toTopOf="@+id/u2a2txBarra"
-        app:layout_constraintTop_toBottomOf="@+id/u2a2btMostrar"
-        tools:layout_editor_absoluteX="152dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2a2btMostrar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
