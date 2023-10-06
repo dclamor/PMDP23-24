@@ -5,25 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".U2.ut2a4Picker">
-    <?xml version="1.0" encoding="utf-8"?>
+
+
+    <!--on below line we are creating a text view-->
+
+    <!--on below line we are creating a
+        button for date picker-->
 
     <Button
         android:id="@+id/idBtnPickDate"
-        android:layout_width="110dp"
-        android:layout_height="58dp"
+        android:layout_width="133dp"
+        android:layout_height="70dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Pick Date"
         android:textAllCaps="false"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintEnd_toEndOf="@+id/idTVSelectedDate"
+        app:layout_constraintStart_toStartOf="@+id/idTVSelectedDate"
+        app:layout_constraintTop_toBottomOf="@+id/idTVSelectedDate" />
 
     <TextView
         android:id="@+id/idTVSelectedDate"
-        android:layout_width="115dp"
-        android:layout_height="45dp"
+        android:layout_width="137dp"
+        android:layout_height="49dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginStart="36dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="Date"
@@ -31,20 +38,28 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="277dp" />
-    <!--on below line we are creating a text view-->
+        app:layout_constraintBottom_toTopOf="@+id/idBtnPickTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idTVSelectedTime"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <!--on below line we are creating a
-        button for date picker-->
+    <Button
+        android:id="@+id/idBtnPickTime"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:text="Pick Time"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/idTVSelectedTime"
+        app:layout_constraintStart_toStartOf="@+id/idTVSelectedTime"
+        app:layout_constraintTop_toBottomOf="@+id/idTVSelectedTime" />
 
     <TextView
         android:id="@+id/idTVSelectedTime"
-        android:layout_width="125dp"
-        android:layout_height="46dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:layout_above="@id/idBtnPickTime"
         android:layout_centerInParent="true"
-        android:layout_margin="20dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="Time"
@@ -52,19 +67,12 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="276dp" />
-
-    <Button
-        android:id="@+id/idBtnPickTime"
-        android:layout_width="118dp"
-        android:layout_height="58dp"
-        android:layout_centerInParent="true"
-        android:layout_margin="20dp"
-        android:text="Pick Time"
-        android:textAllCaps="false"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toEndOf="@+id/idTVSelectedDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

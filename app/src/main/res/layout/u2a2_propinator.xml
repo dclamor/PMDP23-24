@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".U2.U2a2_parchis">
+    tools:context=".U2.U2a2Popinatron">
 
     <Button
         android:id="@+id/u2aPbt7"
@@ -137,7 +137,7 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="78dp"
         android:layout_height="80dp"
-        android:text="<"
+        android:text="R"
         app:layout_constraintBottom_toBottomOf="@+id/u2aPbt0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
