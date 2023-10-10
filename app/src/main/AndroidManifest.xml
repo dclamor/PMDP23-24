@@ -13,22 +13,23 @@
         android:theme="@style/Theme.PMDP2324"
         tools:targetApi="31">
         <activity
+            android:name=".U2.ut2a5PiedraPapelTijera"
+            android:exported="false" />
+        <activity
             android:name=".U2.ut2a4Picker"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".U2.U2a2Popinatron"
             android:exported="false" />
         <activity
             android:name=".U2.U2a2Colorator"
-            android:exported="false"/>
-
-
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

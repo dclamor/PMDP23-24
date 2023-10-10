@@ -53,6 +53,7 @@ public class ut2a4Picker extends AppCompatActivity {
                     year, month, day);
             // at last we are calling show to
             // display our date picker dialog.
+            datePickerDialog.show();
         });
 
         pickTimeBtn = findViewById(R.id.idBtnPickTime);
