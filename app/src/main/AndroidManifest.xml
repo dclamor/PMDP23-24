@@ -30,11 +30,7 @@
         <activity
             android:name=".U2.ut2a4Picker"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".U2.U2a2Popinatron"
@@ -42,9 +38,7 @@
         <activity
             android:name=".U2.U2a2Colorator"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
     </application>
 
 </manifest>
