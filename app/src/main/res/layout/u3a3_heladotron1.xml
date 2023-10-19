@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".U3.u3a3Heladotron1">
+
+    <TextView
+        android:id="@+id/u3a3idTvVainilla"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="24dp"
+        android:text="Vainilla"
+        app:layout_constraintBottom_toTopOf="@+id/u3a3idTvFresa"
+        app:layout_constraintEnd_toEndOf="@+id/u3a3idTvFresa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a3idTvFresa" />
+
+    <TextView
+        android:id="@+id/u3a3idTvFresa"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:text="Fresa"
+        app:layout_constraintBottom_toTopOf="@+id/u3a3idTvChocolate"
+        app:layout_constraintEnd_toEndOf="@+id/u3a3idTvChocolate"
+        app:layout_constraintStart_toStartOf="@+id/u3a3idTvChocolate" />
+
+    <TextView
+        android:id="@+id/u3a3idTvChocolate"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:text="Chocolate"
+        app:layout_constraintBottom_toTopOf="@+id/u3a3idTvTipo"
+        app:layout_constraintEnd_toEndOf="@+id/u3a3idTvTipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a3idTvTipo" />
+
+    <TextView
+        android:id="@+id/u3a3idTvTipo"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        android:text="Tipo"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="282dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/u3a3idTvTipo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397" />
+</androidx.constraintlayout.widget.ConstraintLayout>
