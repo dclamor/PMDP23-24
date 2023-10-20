@@ -12,5 +12,6 @@ public class u3a3Heladotron2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.u3a3_heladotron2);
+        Bundle info = getIntent().getExtras();
     }
 }

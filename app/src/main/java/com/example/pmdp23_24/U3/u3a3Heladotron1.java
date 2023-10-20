@@ -67,7 +67,7 @@ public class u3a3Heladotron1 extends AppCompatActivity {
         btGenerar = findViewById(R.id.u3a3idBtGenerar);
         btGenerar.setOnClickListener(view ->
         {
-
+            numChoco=Integer.parseInt(udChoco.getText().toString());
             Intent i = new Intent(this, u3a3Heladotron2.class);
             i.putExtra(INFO_CHOCO,numChoco);
             i.putExtra(INFO_VAINILLA,numVainilla);
