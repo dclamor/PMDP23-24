@@ -17,7 +17,13 @@
             android:exported="false" />
         <activity
             android:name=".U3.u3a3Heladotron1"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".U3.u3a2bResultado"
             android:exported="false" />
@@ -29,19 +35,14 @@
             android:exported="false" />
         <activity
             android:name=".U3.u3a1aLanza"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".U2.ut2a5PiedraPapelTijera"
             android:exported="false" />
         <activity
             android:name=".U2.ut2a4Picker"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".U2.U2a2Popinatron"
             android:exported="false" />

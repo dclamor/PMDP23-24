@@ -6,4 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".U3.u3a3Heladotron2">
 
+    <TextView
+        android:id="@+id/u3a3bIdTvDisplay"
+        android:layout_width="375dp"
+        android:layout_height="375dp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <Button
+        android:id="@+id/u3a3bIdBtVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="468dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
