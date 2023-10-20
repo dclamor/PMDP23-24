@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/u3a3idTvVainilla"
-        android:layout_width="226dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="51dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="12dp"
         android:text="Vainilla"
         app:layout_constraintBottom_toTopOf="@+id/u3a3idTvFresa"
         app:layout_constraintEnd_toEndOf="@+id/u3a3idTvFresa"
@@ -19,19 +19,20 @@
 
     <TextView
         android:id="@+id/u3a3idTvFresa"
-        android:layout_width="226dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="61dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
         android:text="Fresa"
         app:layout_constraintBottom_toTopOf="@+id/u3a3idTvChocolate"
         app:layout_constraintEnd_toEndOf="@+id/u3a3idTvChocolate"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/u3a3idTvChocolate" />
 
     <TextView
         android:id="@+id/u3a3idTvChocolate"
-        android:layout_width="226dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="66dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="16dp"
         android:text="Chocolate"
         app:layout_constraintBottom_toTopOf="@+id/u3a3idTvTipo"
         app:layout_constraintEnd_toEndOf="@+id/u3a3idTvTipo"
@@ -40,22 +41,67 @@
 
     <TextView
         android:id="@+id/u3a3idTvTipo"
-        android:layout_width="226dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="56dp"
+        android:layout_width="36dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="40dp"
         android:text="Tipo"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3SpRecipiente"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/spinner"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/u3a3SpRecipiente"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="282dp"
-        android:layout_height="41dp"
+        android:id="@+id/u3a3SpRecipiente"
+        android:layout_width="149dp"
+        android:layout_height="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toEndOf="@+id/u3a3idTvTipo"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
+        app:layout_constraintVertical_bias="0.28" />
+
+    <EditText
+        android:id="@+id/u3a3idTxVainilla"
+        android:layout_width="27dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3idTvVainilla"
+        app:layout_constraintStart_toEndOf="@+id/u3a3idTvVainilla" />
+
+    <EditText
+        android:id="@+id/u3a3idTxFresa"
+        android:layout_width="27dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3idTvFresa"
+        app:layout_constraintStart_toEndOf="@+id/u3a3idTvFresa"
+        app:layout_constraintTop_toTopOf="@+id/u3a3idTvFresa" />
+
+    <EditText
+        android:id="@+id/u3a3idTxChoco"
+        android:layout_width="27dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a3idTvChocolate"
+        app:layout_constraintStart_toEndOf="@+id/u3a3idTvChocolate"
+        app:layout_constraintTop_toTopOf="@+id/u3a3idTvChocolate" />
+
+    <Button
+        android:id="@+id/u3a3idBtGenerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Generar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3a3idTvTipo"
+        app:layout_constraintTop_toBottomOf="@+id/u3a3SpRecipiente" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
