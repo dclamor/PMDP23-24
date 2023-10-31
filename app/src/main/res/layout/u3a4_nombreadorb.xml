@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".U3.u3a4Nombreadorb">
+
+    <EditText
+        android:id="@+id/u3a4bIdEtNombre"
+        android:layout_width="262dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Introduzca un nuevo nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/u3a4bIdlbtAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Aceptar"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a4bIdlbtCancelar"
+        app:layout_constraintEnd_toStartOf="@+id/u3a4bIdlbtCancelar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/u3a4bIdlbtCancelar" />
+
+    <Button
+        android:id="@+id/u3a4bIdlbtCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="@+id/u3a4bIdEtNombre"
+        app:layout_constraintStart_toStartOf="@+id/u3a4bIdEtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/u3a4bIdEtNombre" />
+
+    <Button
+        android:id="@+id/u3a4bIdlbtLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="@+id/u3a4bIdlbtCancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/u3a4bIdlbtCancelar"
+        app:layout_constraintTop_toTopOf="@+id/u3a4bIdlbtCancelar"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

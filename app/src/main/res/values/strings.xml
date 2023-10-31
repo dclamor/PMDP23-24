@@ -3,10 +3,10 @@
     <string name="app_name">PMDP23-24</string>
 
 
-        <string-array name="arrayRecipientes">
-            <item>Cucurucho</item>
-            <item>CucuruchoChoco</item>
-            <item>Tarrina</item>
-        </string-array>
+    <string-array name="arrayRecipientes">
+        <item>Cucurucho</item>
+        <item>CucuruchoChoco</item>
+        <item>Tarrina</item>
+    </string-array>
 
 </resources>
