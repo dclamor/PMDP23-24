@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PMDP2324"
         tools:targetApi="31">
         <activity
+            android:name=".U3.u3a6Mapa_A"
+            android:exported="true"/>
+        <activity
+            android:name=".U3.u3a6Mapa_B"
+            android:exported="false" />
+        <activity
             android:name=".U3.u3a5FibonacciB"
             android:exported="false" />
         <activity
@@ -24,13 +30,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".U3.u3a4Nombreadorb"
             android:exported="false" />
         <activity
             android:name=".U3.U3a4Nombreador"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".U3.Ejemplo2Lanzada"
             android:exported="false" />

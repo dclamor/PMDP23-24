@@ -36,9 +36,11 @@ public class u3a5FibonacciA extends AppCompatActivity {
                 result -> {
                     if (result.getResultCode() == Activity.RESULT_OK) {
                         Intent data = result.getData();
+                        tvN1.setText(tvN2.getText().toString());
                         tvN2.setText(data.getStringExtra(u3a5FibonacciB.CLAVE_SUMA));
                         tvSms.setText("Sucesión realizada!");
                         tvSms.setTextColor(Color.GREEN);
+
                     } else {
                         tvSms.setText("El usuario ha cancelado la operación");
                         tvSms.setTextColor(Color.RED);
@@ -48,7 +50,7 @@ public class u3a5FibonacciA extends AppCompatActivity {
             Intent i = new Intent(this, u3a5FibonacciB.class);
             i.putExtra(CLAVE_N1, Integer.parseInt(tvN1.getText().toString()));
             i.putExtra(CLAVE_N2, Integer.parseInt(tvN2.getText().toString()));
-            tvN1.setText(tvN2.getText().toString());
+
 
             lanzador.launch(i);
         });
