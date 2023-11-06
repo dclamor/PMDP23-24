@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.pmdp23_24.R;
@@ -16,6 +17,7 @@ import com.example.pmdp23_24.R;
     public class u3a6Mapa_A extends AppCompatActivity {
         public static final String CLAVE_TEXTO = "VALOR_TEXTO";
         TextView tvSms,tvResultado;
+        EditText tvEntrada;
         Button btAnalizar;
         ActivityResultLauncher<Intent> lanzador;
 
@@ -26,6 +28,7 @@ import com.example.pmdp23_24.R;
         tvSms = findViewById(R.id.u3a6idTvSms);
         tvResultado = findViewById(R.id.u3a6idTvResultado);
         btAnalizar = findViewById(R.id.u3a6idBtAnalizar);
+        tvEntrada = findViewById(R.id.u3a6idEtEntrada);
         lanzador = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
@@ -45,6 +48,12 @@ import com.example.pmdp23_24.R;
                         tvSms.setTextColor(Color.RED);
                     }
                 });
+        btAnalizar.setOnClickListener(view -> {
+            Intent i = new Intent(this, u3a6Mapa_B.class);
+            i.putExtra(CLAVE_TEXTO,tvEntrada.getText().toString());
+
+            lanzador.launch(i);
+        });
 
 
     }

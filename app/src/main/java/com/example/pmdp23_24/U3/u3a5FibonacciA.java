@@ -51,7 +51,6 @@ public class u3a5FibonacciA extends AppCompatActivity {
             i.putExtra(CLAVE_N1, Integer.parseInt(tvN1.getText().toString()));
             i.putExtra(CLAVE_N2, Integer.parseInt(tvN2.getText().toString()));
 
-
             lanzador.launch(i);
         });
     }
