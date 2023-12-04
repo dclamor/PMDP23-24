@@ -34,7 +34,7 @@ import com.example.pmdp23_24.R;
                 result -> {
                     if (result.getResultCode() == Activity.RESULT_OK) {
                         Intent data = result.getData();
-                        String caracteres[]=data.getStringArrayExtra(u3a6Mapa_B.CLAVE_CARACTERES);
+                        String[] caracteres = data.getStringArrayExtra(u3a6Mapa_B.CLAVE_CARACTERES);
                         tvResultado.setText("Caracteres más utilizados:\n");
                         for (String cadena:caracteres
                              ) {
@@ -49,6 +49,7 @@ import com.example.pmdp23_24.R;
                     }
                 });
         btAnalizar.setOnClickListener(view -> {
+
             Intent i = new Intent(this, u3a6Mapa_B.class);
             i.putExtra(CLAVE_TEXTO,tvEntrada.getText().toString());
 
